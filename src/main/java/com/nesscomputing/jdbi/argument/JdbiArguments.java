@@ -29,7 +29,7 @@ public final class JdbiArguments
 
     public static <U extends Enum<U>> EnumArgument<U> forEnum(final Enum<U> enumValue)
     {
-    	return new EnumArgument<U>(enumValue);
+        return new EnumArgument<U>(enumValue);
     }
 
     public static CollectionArgument<String> forStringCollection(final Collection<String> collection)

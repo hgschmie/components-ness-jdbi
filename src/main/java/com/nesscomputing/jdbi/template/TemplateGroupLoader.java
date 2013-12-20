@@ -33,7 +33,7 @@ import org.antlr.stringtemplate.language.AngleBracketTemplateLexer;
 
 public class TemplateGroupLoader
 {
-	private static final Log LOG = Log.findLog();
+    private static final Log LOG = Log.findLog();
 
     public static StringTemplateGroup load(final String name)
     {

@@ -34,8 +34,8 @@ import org.skife.jdbi.v2.tweak.StatementLocator;
 public class AnnotatedStatementLocator implements StatementLocator
 {
     public static final String STATEMENT_CLASS = "_jmx_class";
-	public static final String STATEMENT_GROUP = "_jmx_group";
-	public static final String STATEMENT_NAME = "_jmx_name";
+    public static final String STATEMENT_GROUP = "_jmx_group";
+    public static final String STATEMENT_NAME = "_jmx_name";
 
     private static final Log LOG = Log.findLog();
 

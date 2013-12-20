@@ -34,9 +34,9 @@ public class WrappingDbi extends DbiAdapter implements IDBI
     private final StatementRewriter rewriter;
 
     private WrappingDbi(final IDBI delegate,
-    				   final StatementLocator locator,
-    				   final StatementBuilder builder,
-    				   final StatementRewriter rewriter)
+                       final StatementLocator locator,
+                       final StatementBuilder builder,
+                       final StatementRewriter rewriter)
     {
         super(delegate, true);
         this.locator = locator;
@@ -64,37 +64,37 @@ public class WrappingDbi extends DbiAdapter implements IDBI
 
     public static final class Builder
     {
-    	private final IDBI delegate;
+        private final IDBI delegate;
         private StatementLocator locator = null;
         private StatementBuilder builder = null;
         private StatementRewriter rewriter = null;
 
         public Builder(final IDBI delegate)
         {
-        	this.delegate = delegate;
+            this.delegate = delegate;
         }
 
         public IDBI build()
         {
-        	return new WrappingDbi(delegate, locator, builder, rewriter);
+            return new WrappingDbi(delegate, locator, builder, rewriter);
         }
 
-		public Builder setLocator(final StatementLocator locator)
-		{
-			this.locator = locator;
-			return this;
-		}
+        public Builder setLocator(final StatementLocator locator)
+        {
+            this.locator = locator;
+            return this;
+        }
 
-		public Builder setBuilder(final StatementBuilder builder)
-		{
-			this.builder = builder;
-			return this;
-		}
+        public Builder setBuilder(final StatementBuilder builder)
+        {
+            this.builder = builder;
+            return this;
+        }
 
-		public Builder setRewriter(final StatementRewriter rewriter)
-		{
-			this.rewriter = rewriter;
-			return this;
-		}
+        public Builder setRewriter(final StatementRewriter rewriter)
+        {
+            this.rewriter = rewriter;
+            return this;
+        }
     }
 }
