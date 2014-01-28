@@ -15,8 +15,6 @@
  */
 package com.nesscomputing.jdbi.template;
 
-import com.nesscomputing.logging.Log;
-
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -26,6 +24,8 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
+
+import com.nesscomputing.logging.Log;
 
 import org.antlr.stringtemplate.StringTemplateErrorListener;
 import org.antlr.stringtemplate.StringTemplateGroup;

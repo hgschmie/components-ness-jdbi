@@ -17,8 +17,6 @@ package com.nesscomputing.jdbi.metrics;
 
 import java.util.concurrent.TimeUnit;
 
-import org.skife.jdbi.v2.TimingCollector;
-
 import com.google.common.base.Objects;
 import com.google.inject.AbstractModule;
 import com.google.inject.Inject;
@@ -29,6 +27,8 @@ import com.yammer.metrics.core.MetricsRegistry;
 import com.yammer.metrics.jdbi.InstrumentedTimingCollector;
 import com.yammer.metrics.jdbi.strategies.ShortNameStrategy;
 import com.yammer.metrics.jdbi.strategies.StatementNameStrategy;
+
+import org.skife.jdbi.v2.TimingCollector;
 
 public class DatabaseMetricsModule extends AbstractModule
 {

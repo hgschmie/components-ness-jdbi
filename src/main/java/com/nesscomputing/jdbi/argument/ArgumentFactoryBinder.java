@@ -15,12 +15,12 @@
  */
 package com.nesscomputing.jdbi.argument;
 
-import org.skife.jdbi.v2.tweak.ArgumentFactory;
-
 import com.google.inject.Binder;
 import com.google.inject.TypeLiteral;
 import com.google.inject.binder.LinkedBindingBuilder;
 import com.google.inject.multibindings.Multibinder;
+
+import org.skife.jdbi.v2.tweak.ArgumentFactory;
 
 public final class ArgumentFactoryBinder
 {

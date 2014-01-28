@@ -17,9 +17,9 @@ package com.nesscomputing.jdbi;
 
 import javax.annotation.Nullable;
 
-import org.skife.jdbi.v2.DBI;
-
 import com.google.common.base.Function;
+
+import org.skife.jdbi.v2.DBI;
 
 /**
  * Customizes the DBI so that all all statements use an AnnotatedStatementLocator. This is used as follows:

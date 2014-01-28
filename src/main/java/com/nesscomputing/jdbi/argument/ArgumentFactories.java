@@ -15,13 +15,13 @@
  */
 package com.nesscomputing.jdbi.argument;
 
+import java.net.URI;
+import java.sql.Array;
+
 import org.joda.time.ReadableInstant;
 import org.skife.jdbi.v2.StatementContext;
 import org.skife.jdbi.v2.tweak.Argument;
 import org.skife.jdbi.v2.tweak.ArgumentFactory;
-
-import java.net.URI;
-import java.sql.Array;
 
 @SuppressWarnings("PMD.MissingStaticMethodInNonInstantiatableClass")
 final class ArgumentFactories

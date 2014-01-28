@@ -19,10 +19,10 @@ package com.nesscomputing.jdbi.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.nesscomputing.jdbi.JdbiMappers;
+
 import org.joda.time.DateTime;
 import org.skife.jdbi.v2.util.TypedMapper;
-
-import com.nesscomputing.jdbi.JdbiMappers;
 
 /**
  * A DateTime mapper, suitable for use with the "interface-style"

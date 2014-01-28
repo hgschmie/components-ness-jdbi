@@ -19,10 +19,6 @@ import java.util.concurrent.TimeUnit;
 
 import javax.annotation.Nullable;
 
-import org.junit.Assert;
-import org.junit.Test;
-import org.skife.jdbi.v2.TimingCollector;
-
 import com.google.inject.Binder;
 import com.google.inject.Guice;
 import com.google.inject.Inject;
@@ -31,8 +27,11 @@ import com.google.inject.Module;
 import com.google.inject.Stage;
 import com.google.inject.name.Named;
 import com.google.inject.name.Names;
-import com.nesscomputing.jdbi.metrics.DatabaseMetricsModule;
 import com.yammer.metrics.guice.InstrumentationModule;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.skife.jdbi.v2.TimingCollector;
 
 public class TestDatabaseMetricsModule
 {

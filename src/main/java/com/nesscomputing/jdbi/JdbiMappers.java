@@ -24,10 +24,11 @@ import java.sql.Types;
 import java.util.Arrays;
 import java.util.List;
 
+import com.google.common.base.Preconditions;
+
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 
-import com.google.common.base.Preconditions;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 

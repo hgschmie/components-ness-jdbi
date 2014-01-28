@@ -20,8 +20,6 @@ import static java.lang.String.format;
 import java.lang.annotation.Annotation;
 import java.security.ProviderException;
 
-import org.skife.jdbi.v2.IDBI;
-
 import com.google.inject.Binder;
 import com.google.inject.Inject;
 import com.google.inject.Injector;
@@ -29,6 +27,8 @@ import com.google.inject.Key;
 import com.google.inject.Provider;
 import com.google.inject.Scopes;
 import com.google.inject.name.Names;
+
+import org.skife.jdbi.v2.IDBI;
 
 public final class SqlObjectBinder
 {

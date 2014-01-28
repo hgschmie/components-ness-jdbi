@@ -15,11 +15,11 @@
  */
 package com.nesscomputing.jdbi.mapper;
 
-import org.skife.jdbi.v2.ResultSetMapperFactory;
-
 import com.google.inject.Binder;
 import com.google.inject.binder.LinkedBindingBuilder;
 import com.google.inject.multibindings.Multibinder;
+
+import org.skife.jdbi.v2.ResultSetMapperFactory;
 
 /**
  * Binds a {@link ResultSetMapperFactory} so that JDBI will automatically use it
